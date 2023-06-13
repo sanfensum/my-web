@@ -23,8 +23,10 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 origins = [
     "http://www.sanfensum.cn",
     "http://www.sanfensum.cn:8010",
+    "http://www.sanfensum.cn:8086",
     "http://sanfensum.cn",
     "http://sanfensum.cn:8010",
+    "http://sanfensum.cn:8086",
     "http://tianqing.sanfensum.cn"
 ]
 
@@ -107,12 +109,6 @@ def Login(pwd:str, request: Request):
 @limiter.limit("60/60second")
 def Login(cookie:str, request: Request):
     return Cookie(cookie)
-
-
-# so good ##########################################
-@app.get("/myimage")
-def MyPic():
-    return GetPic()
 
 if __name__ == "__main__":
     uvicorn.run("apis:app", host="0.0.0.0", port=8010, log_level="info", reload=True)
