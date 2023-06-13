@@ -1,0 +1,43 @@
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.row_center{
+    text-align: center;
+}
+
+.col_center{
+    display:flex;
+    flex-direction:column;
+    justify-content:center; 
+    align-items: center;
+}
+
+
+
+.flex{
+    display:flex;
+}
+
+.shadow{
+    box-shadow: 0 8px 39px 0 rgba(0, 0, 0, 0.37);
+}
+
+@media screen and (max-width: 619px) {
+    .little_window_one{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 924px) {
+    .little_window_two{
+        display: none;
+    }
+}

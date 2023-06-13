@@ -1,0 +1,124 @@
+
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.background{
+    background-image: url(../img/background/water_background.jpg);
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position-x: center ; 
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.card{
+   /* background: rgba(118, 196, 230, 0.921); */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 260px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content:center;
+
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.onewater{
+    font-size: 90%;
+    color: aqua;
+}
+
+.add_water{
+    align-self: flex-end;
+    height: 40px;
+    width: 60px;
+    border-radius: 16px;
+    border: 0;
+    background-color: rgba(189, 243, 245, 0.751);
+    margin: 1px;
+}
+
+.popup {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 设置在顶层 */
+    left: 0%;
+    top: 0%;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.forflex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* 弹窗主体 */
+.popup_content {
+    background-color: #fefefe;
+    width: 40%;
+    height: 50%;
+    padding: 20px;
+}
+ 
+/* 关闭按钮 */
+.popup_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.popup_close:hover,
+.popup_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup_body{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.water{
+    background-color: rgba(183, 246, 234, 0.89);
+    width: 60%;
+    height: 80%;
+    border-radius: 3%;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 0;
+}
+
+.submit{
+    height: 40px;
+    width: 60px;
+    border-radius: 16px;
+    border: 0;
+    background-color: rgba(189, 243, 245, 0.751);
+    margin: 1px;
+}

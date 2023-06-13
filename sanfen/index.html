@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="sanfen sanfensum sanfenichinoel 三分 三分之一 天清 清诺"/>
+    <meta name="description" content="sanfen的个人主页"/>
+    <title>三分之一的主页</title>
+    <link rel="shortcut icon" href="./img/first.png">
+    <link rel="stylesheet" href="./css/public_style.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+
+</head>
+
+
+<body class="index_background">
+
+    <!-- 大主页和登录页 -->
+    <div class="flip_card" id="flip_card">
+        <!-- 正面 主页 -->
+        <div class="face" id="face">
+            <div class="row_center index_head_card">
+                <div class="head_card" id="head_card">
+                    <img class="index_head_img rotare360" src="./img/first.png">
+                    <br>
+                    <b class="txt_big">sanfen</b>
+                    <br>
+                    <span class="txt_small" id="myxun"></span>
+                    <script> sayxun() </script>
+                    <br>
+                    <br>
+                </div>
+                
+                <div class="buttones">
+                    <a href="http://www.sanfensum.cn/" target="_blank" rel="noopener noreferrer">
+                        <button class="button">
+                            <b>sanfen的主页</b><br>home
+                        </button>
+                    </a>
+            
+                    <a href="./blogs.html" target="_blank">
+                        <button class="button">
+                            <b>博客</b><br>blog
+                        </button>
+                    </a>
+        
+                    <a href="https://github.com/sanfenichinoel" target="_blank" rel="noopener noreferrer">
+                        <button class="button">
+                            <b>库</b><br>github
+                        </button>
+                    </a>
+        
+                    <a href="http://tianqing.sanfensum.cn/" target="_blank" rel="noopener noreferrer">
+                        <button class="button">
+                            <b>天清的主页</b><br>good
+                        </button>
+                    </a>
+        
+                    <a href="./water.html" target="_blank">
+                        <button class="button">
+                            <b>水</b><br>water
+                        </button>
+                    </a>
+            
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- 反面 登录界面 -->
+        <div class="back_background" id="back_background">
+
+            <div class="true-back">
+                <div class="pp" id="pp1">
+                    
+                </div>
+                <div class="pp" id="pp2">
+
+                </div>
+                <div class="pp" id="pp3">
+
+                </div>
+                <div class="pp" id="pp4">
+
+                </div>
+                <div class="pp" id="pp6">
+
+                </div>
+                <div class="pp" id="pp7">
+
+                </div>
+                <div class="pp" id="pp8">
+
+                </div>
+                <div class="pp" id="pp9">
+
+                </div>
+                <div class="back" id="back">
+                    <div class="login">
+                        <div class="login_title">
+                            <span>Login</span>
+                        </div>
+                        <input class="password" type="password" id="password">
+                        <button class="submit" onclick="Login()">
+                            登录
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <script> _login() </script>
+
+        </div>
+        <script> Flip() </script>
+
+    </div>
+
+    <footer class="footer">
+        <p>
+            Copyright 2022 sanfen 备案号 <a target = "_black" rel = "noopener noreferrer nofollow" href="https://beian.miit.gov.cn/"> 鄂ICP备2021022194号-1</a>
+        </p>
+    </footer>
+    
+
+</body>
+
+</html>
