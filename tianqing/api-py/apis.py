@@ -9,6 +9,7 @@ import uvicorn
 
 from myimages import GetPic
 
+app = FastAPI()
 origins = [
     "http://www.sanfensum.cn",
     "http://www.sanfensum.cn:8010",
@@ -28,7 +29,7 @@ app.add_middleware(
 )
 
 # so good ##########################################
-@app.get("/myimage")
+@app.get("/randimage")
 def MyPic():
     return GetPic()
 

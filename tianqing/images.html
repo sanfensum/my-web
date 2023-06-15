@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>天清的图库</title>
     <link rel="shortcut icon" href="./pic/first.png">
+    <link rel="stylesheet" href="./css/images.css">
+    <script type="text/javascript" src="./js/images.js"></script>
 </head>
 
 
-<script>
-    function image(){
-        fetch('http://sanfensum.cn:8010/myimage',{
-            method: 'GET',
-            mode:"cors"
-        })
-	    .then(res => { 
-           console.log('res',res);
-           return res.json();
-        }).then(json => {
-            json = json.replaceAll(" ", "%20");
-            console.log('获取的结果', json);
-            document.write( "<img style=\"max-height:100%; max-width:100%\" src = " + json + ">" );
-            return json;
-        }).catch(err => {
-            console.log('请求错误', err);
-        })
-    }
-    </script>
+<body>
+    <div id="head-title">
+        天清正在开发中
+    </div>
 
-<body onload = "image()">
+    <div id="main-body">
+        
+    </div>
+    
+    
+    <div>
+        <button onclick="RandImage()">
+            点击加载图片
+        </button>
+        <div id="img">
+    
+        </div>
+    </div>
 
     
 </body>

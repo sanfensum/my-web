@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+#head-title{
+    display: flex;
+    background-color: rgb(201, 227, 218);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    box-shadow: 0 8px 39px 0 rgba(0, 0, 0, 0.37);
+    z-index: 2;
+}
+
+
