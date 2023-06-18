@@ -10,7 +10,6 @@ import uvicorn
 from mysql import Mysql
 from mywater import Mysql_water
 from mylogin import IsMe, Cookie
-from myimages import GetPic
 
 mysql = Mysql()
 mywater = Mysql_water()

@@ -1,5 +1,10 @@
+
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../img/background.jpeg');
 }
 
 #head-title{
@@ -9,7 +14,109 @@ body{
     padding-bottom: 10px;
     justify-content: center;
     box-shadow: 0 8px 39px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
     z-index: 2;
 }
 
+#main-body{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    width: 100%;
+    padding-top: 1%;
 
+    overflow-y: auto;
+    scrollbar-width: none;  
+    -ms-overflow-style: none; 
+}
+#main-body::-webkit-scrollbar {
+    display: none;
+}
+
+.img-dir{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 39px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    width: 18%;
+    height: 45%;
+    margin: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    transition: .6s;
+}
+
+.img-dir:hover{
+    transform: scale(1.10)
+}
+
+@media screen and (max-width: 900px) {
+	.img-dir{
+        width: 25%;
+        height: 40%;
+    }
+}
+@media screen and (max-width: 400px) {
+	.img-dir{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+#dir1{
+    background-image: url('../img/dt.jpeg');
+}
+#dir2{
+    background-image: url('../img/tq.png');
+}
+#dir3{
+    background-image: url('../img/yz.jpg');
+    background-position: center;
+}
+#dir4{
+    background-image: url('../img/ts.jpg');
+}
+#dir5{
+    background-image: url('../img/qy.png');
+}
+#dir6{
+    background-image: url('../img/hj.jpg');
+}
+#dir7{
+    background-image: url('../img/tt.png');
+}
+#dir8{
+    background-image: url('../img/yq.png');
+}
+#dir9{
+    background-image: url('../img/ys.jpg');
+}
+#dir10{
+    background-image: url('../img/hui.png');
+}
+#dir11{
+    background-image: url('../img/lf.png');
+}
+#dir12{
+    background-image: url('../img/zy.jpg');
+}
+
+.dir-name{
+    background: rgba(255, 255, 255, 0.755);
+    box-shadow: 0 8px 39px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dir-name span{
+    font-size: 90%;
+    color: rgb(113, 178, 205);
+}
