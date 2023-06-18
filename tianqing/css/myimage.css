@@ -1,0 +1,28 @@
+
+#main{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    width: 100%;
+    padding-top: 1%;
+}
+
+#main img{
+    width: 18%;
+    height: 45%;
+    margin: 3%;
+}
+
+@media screen and (max-width: 900px) {
+	#main img{
+        width: 25%;
+        height: 40%;
+    }
+}
+@media screen and (max-width: 400px) {
+	#main img{
+        width: 40%;
+        height: 40%;
+    }
+}

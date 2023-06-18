@@ -6,6 +6,9 @@ body{
     height: 100vh;
     background-image: url('../img/background.jpeg');
 }
+a{
+    text-decoration: none;
+}
 
 #head-title{
     display: flex;

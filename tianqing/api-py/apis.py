@@ -7,7 +7,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 import uvicorn
 
-from myimages import GetPic
+from myimages import MyImages
 
 app = FastAPI()
 origins = [
@@ -28,10 +28,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# so good ##########################################
-@app.get("/randimage")
-def MyPic():
-    return GetPic()
+myimages = MyImages()
+
+@app.get("/randomimage")
+def random_image():
+    return myimages.get_random_image()
+
+@app.get("/directory")
+def get_this_dir(name:str):
+    images, num = myimages.get_one_dir(name)
+
+    data = {
+        "num": num,
+        "list": images
+    }
+    return data
 
 if __name__ == "__main__":
     uvicorn.run("apis:app", host="0.0.0.0", port=8086, log_level="info", reload=True)
