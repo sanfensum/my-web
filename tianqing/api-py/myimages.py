@@ -34,13 +34,15 @@ class MyImages():
 
 
     def show(self):
-        # print(myImage.get_images_num())
-        # print(myImage.get_my_images_dir())
-        # print(myImage.get_one_dir("黄金拼图"))
-        print(len(self.every_dir))
+        pass
+        # print(self.get_images_num())
+        # print(self.get_my_images_dir())
+        # print(self.get_one_dir("原&崩"))
+        # print(len(self.every_dir))
     
     
 # if __name__ == "__main__":
 #     myImage = MyImages()
+#     myImage.show()
     
         

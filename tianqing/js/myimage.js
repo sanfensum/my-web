@@ -12,13 +12,15 @@ function getImage()
         return res.json();
     })
     .then(res => {
-        num = res["num"];
-        list = res["list"];
+        let num = res["num"];
+        let list = res["list"];
         // console.log(list);
 
-        data = ""
+        let data = ""
         for(let i = 0; i < list.length; i++){
-            data += "<img class=\"lazyload\" data-src=\"" + list[i] + "\" onclick=toBig(\"" + list[i] + "\") >";
+            li = list[i].replaceAll(" ", "%20")
+            let _data = "<img class=\"lazyload\" data-src=\"" + li + "\" onclick=toBig(\"" + li + "\") >";
+            data += _data;
         }
 
         let content = document.getElementById("main");
